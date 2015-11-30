@@ -99,8 +99,9 @@
 		6A9A7E881C0C2C2900F584E5 /* MyMind */ = {
 			isa = PBXGroup;
 			children = (
+				6A9A7EBB1C0C2D0600F584E5 /* Model */,
+				6A9A7EBA1C0C2CFA00F584E5 /* ViewControllers */,
 				6A9A7E891C0C2C2900F584E5 /* AppDelegate.swift */,
-				6A9A7E8B1C0C2C2900F584E5 /* ViewController.swift */,
 				6A9A7E8D1C0C2C2900F584E5 /* Main.storyboard */,
 				6A9A7E931C0C2C2900F584E5 /* Assets.xcassets */,
 				6A9A7E951C0C2C2900F584E5 /* LaunchScreen.storyboard */,
@@ -126,6 +127,21 @@
 				6A9A7EAE1C0C2C2900F584E5 /* Info.plist */,
 			);
 			path = MyMindUITests;
+			sourceTree = "<group>";
+		};
+		6A9A7EBA1C0C2CFA00F584E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A9A7E8B1C0C2C2900F584E5 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6A9A7EBB1C0C2D0600F584E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyMind/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.MyMind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyMind/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.MyMind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
