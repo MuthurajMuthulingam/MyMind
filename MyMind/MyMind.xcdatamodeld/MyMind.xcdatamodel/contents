@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9056" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Interview" representedClassName=".Interview" syncable="YES">
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="interviewDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="notificationInterval" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="shortJD" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="postInterview" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Interview" inverseName="postInterview" inverseEntity="Interview" syncable="YES"/>
+    </entity>
+    <entity name="PostInterview" representedClassName=".PostInterview" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="interview" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PostInterview" inverseName="interview" inverseEntity="PostInterview" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Interview" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="PostInterview" positionX="-54" positionY="27" width="128" height="105"/>
+    </elements>
 </model>

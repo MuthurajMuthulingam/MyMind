@@ -19,6 +19,11 @@
 		6A9A7F0B1C0C614F00F584E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A7F0A1C0C614F00F584E5 /* BaseViewController.swift */; };
 		6A9A7F0F1C0C61A500F584E5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A7F0E1C0C61A500F584E5 /* LoginView.swift */; };
 		6A9A7F111C0C61D800F584E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A7F101C0C61D800F584E5 /* LoginViewController.swift */; };
+		6ABC1E8C1C39659C001F15BF /* Interview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E881C39659C001F15BF /* Interview+CoreDataProperties.swift */; };
+		6ABC1E8D1C39659C001F15BF /* Interview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E891C39659C001F15BF /* Interview.swift */; };
+		6ABC1E8E1C39659C001F15BF /* PostInterview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E8A1C39659C001F15BF /* PostInterview+CoreDataProperties.swift */; };
+		6ABC1E8F1C39659C001F15BF /* PostInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E8B1C39659C001F15BF /* PostInterview.swift */; };
+		6AD9FF351C1567A70004E9AA /* MyMindUIExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD9FF341C1567A70004E9AA /* MyMindUIExtentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6A3C167C1C1F022E00D7E2FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6A3C16771C1F00F600D7E2FC /* MyMind-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyMind-Bridging-Header.h"; sourceTree = "<group>"; };
 		6A9A7E861C0C2C2900F584E5 /* MyMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9A7E891C0C2C2900F584E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A9A7E8B1C0C2C2900F584E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +76,11 @@
 		6A9A7F0A1C0C614F00F584E5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewController/Base/BaseViewController.swift; sourceTree = "<group>"; };
 		6A9A7F0E1C0C61A500F584E5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Views/Login/LoginView.swift; sourceTree = "<group>"; };
 		6A9A7F101C0C61D800F584E5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewController/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		6ABC1E881C39659C001F15BF /* Interview+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Interview+CoreDataProperties.swift"; path = "Model/Interview+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6ABC1E891C39659C001F15BF /* Interview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interview.swift; path = Model/Interview.swift; sourceTree = "<group>"; };
+		6ABC1E8A1C39659C001F15BF /* PostInterview+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PostInterview+CoreDataProperties.swift"; path = "Model/PostInterview+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6ABC1E8B1C39659C001F15BF /* PostInterview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostInterview.swift; path = Model/PostInterview.swift; sourceTree = "<group>"; };
+		6AD9FF341C1567A70004E9AA /* MyMindUIExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMindUIExtentions.swift; path = "UI Catagories/MyMindUIExtentions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +131,8 @@
 		6A9A7E881C0C2C2900F584E5 /* MyMind */ = {
 			isa = PBXGroup;
 			children = (
+				6AF37E421C1EFD0000939810 /* CommonTask Framework */,
+				6AD9FF331C1567100004E9AA /* UI Catagories */,
 				6A9A7F061C0C611600F584E5 /* Views */,
 				6A9A7EBB1C0C2D0600F584E5 /* Model */,
 				6A9A7EBA1C0C2CFA00F584E5 /* ViewControllers */,
@@ -115,7 +141,6 @@
 				6A9A7E931C0C2C2900F584E5 /* Assets.xcassets */,
 				6A9A7E951C0C2C2900F584E5 /* LaunchScreen.storyboard */,
 				6A9A7E981C0C2C2900F584E5 /* Info.plist */,
-				6A9A7E901C0C2C2900F584E5 /* MyMind.xcdatamodeld */,
 			);
 			path = MyMind;
 			sourceTree = "<group>";
@@ -151,6 +176,11 @@
 		6A9A7EBB1C0C2D0600F584E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6ABC1E881C39659C001F15BF /* Interview+CoreDataProperties.swift */,
+				6ABC1E891C39659C001F15BF /* Interview.swift */,
+				6ABC1E8A1C39659C001F15BF /* PostInterview+CoreDataProperties.swift */,
+				6ABC1E8B1C39659C001F15BF /* PostInterview.swift */,
+				6A9A7E901C0C2C2900F584E5 /* MyMind.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -196,6 +226,22 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		6AD9FF331C1567100004E9AA /* UI Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				6AD9FF341C1567A70004E9AA /* MyMindUIExtentions.swift */,
+			);
+			name = "UI Catagories";
+			sourceTree = "<group>";
+		};
+		6AF37E421C1EFD0000939810 /* CommonTask Framework */ = {
+			isa = PBXGroup;
+			children = (
+				6A3C16771C1F00F600D7E2FC /* MyMind-Bridging-Header.h */,
+			);
+			name = "CommonTask Framework";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +252,7 @@
 				6A9A7E821C0C2C2900F584E5 /* Sources */,
 				6A9A7E831C0C2C2900F584E5 /* Frameworks */,
 				6A9A7E841C0C2C2900F584E5 /* Resources */,
+				6A3C167C1C1F022E00D7E2FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,12 +375,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9A7F111C0C61D800F584E5 /* LoginViewController.swift in Sources */,
+				6ABC1E8F1C39659C001F15BF /* PostInterview.swift in Sources */,
 				6A9A7F0F1C0C61A500F584E5 /* LoginView.swift in Sources */,
+				6ABC1E8C1C39659C001F15BF /* Interview+CoreDataProperties.swift in Sources */,
 				6A9A7F0B1C0C614F00F584E5 /* BaseViewController.swift in Sources */,
+				6AD9FF351C1567A70004E9AA /* MyMindUIExtentions.swift in Sources */,
 				6A9A7E8C1C0C2C2900F584E5 /* ViewController.swift in Sources */,
 				6A9A7E921C0C2C2900F584E5 /* MyMind.xcdatamodeld in Sources */,
+				6ABC1E8E1C39659C001F15BF /* PostInterview+CoreDataProperties.swift in Sources */,
 				6A9A7E8A1C0C2C2900F584E5 /* AppDelegate.swift in Sources */,
 				6A9A7F091C0C613B00F584E5 /* BaseView.swift in Sources */,
+				6ABC1E8D1C39659C001F15BF /* Interview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +525,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyMind/commonTaskFramework",
+				);
 				INFOPLIST_FILE = MyMind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -485,6 +541,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyMind/commonTaskFramework",
+				);
 				INFOPLIST_FILE = MyMind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -560,6 +620,7 @@
 				6A9A7EB31C0C2C2900F584E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A9A7EB41C0C2C2900F584E5 /* Build configuration list for PBXNativeTarget "MyMindTests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +629,7 @@
 				6A9A7EB61C0C2C2900F584E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A9A7EB71C0C2C2900F584E5 /* Build configuration list for PBXNativeTarget "MyMindUITests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +638,7 @@
 				6A9A7EB91C0C2C2900F584E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
