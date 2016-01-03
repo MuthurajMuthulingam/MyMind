@@ -14,18 +14,17 @@
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="interview" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PostInterview" inverseName="interview" inverseEntity="PostInterview" syncable="YES"/>
     </entity>
-    <entity name="User" representedClassName=".User" syncable="YES">
+    <entity name="User" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Interview" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="PostInterview" positionX="-54" positionY="27" width="128" height="105"/>
-        <element name="User" positionX="-27" positionY="63" width="128" height="150"/>
+        <element name="User" positionX="-27" positionY="63" width="128" height="135"/>
     </elements>
 </model>

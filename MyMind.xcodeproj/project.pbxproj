@@ -23,6 +23,8 @@
 		6ABC1E8D1C39659C001F15BF /* Interview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E891C39659C001F15BF /* Interview.swift */; };
 		6ABC1E8E1C39659C001F15BF /* PostInterview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E8A1C39659C001F15BF /* PostInterview+CoreDataProperties.swift */; };
 		6ABC1E8F1C39659C001F15BF /* PostInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E8B1C39659C001F15BF /* PostInterview.swift */; };
+		6ABC1E931C396708001F15BF /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E911C396708001F15BF /* User+CoreDataProperties.swift */; };
+		6ABC1E941C396708001F15BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E921C396708001F15BF /* User.swift */; };
 		6AD9FF351C1567A70004E9AA /* MyMindUIExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD9FF341C1567A70004E9AA /* MyMindUIExtentions.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,9 @@
 		6ABC1E891C39659C001F15BF /* Interview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interview.swift; path = Model/Interview.swift; sourceTree = "<group>"; };
 		6ABC1E8A1C39659C001F15BF /* PostInterview+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PostInterview+CoreDataProperties.swift"; path = "Model/PostInterview+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6ABC1E8B1C39659C001F15BF /* PostInterview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostInterview.swift; path = Model/PostInterview.swift; sourceTree = "<group>"; };
+		6ABC1E901C3966DB001F15BF /* MyMind 1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyMind 1.xcdatamodel"; sourceTree = "<group>"; };
+		6ABC1E911C396708001F15BF /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "Model/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6ABC1E921C396708001F15BF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		6AD9FF341C1567A70004E9AA /* MyMindUIExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMindUIExtentions.swift; path = "UI Catagories/MyMindUIExtentions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +181,8 @@
 		6A9A7EBB1C0C2D0600F584E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6ABC1E911C396708001F15BF /* User+CoreDataProperties.swift */,
+				6ABC1E921C396708001F15BF /* User.swift */,
 				6ABC1E881C39659C001F15BF /* Interview+CoreDataProperties.swift */,
 				6ABC1E891C39659C001F15BF /* Interview.swift */,
 				6ABC1E8A1C39659C001F15BF /* PostInterview+CoreDataProperties.swift */,
@@ -380,10 +387,12 @@
 				6ABC1E8C1C39659C001F15BF /* Interview+CoreDataProperties.swift in Sources */,
 				6A9A7F0B1C0C614F00F584E5 /* BaseViewController.swift in Sources */,
 				6AD9FF351C1567A70004E9AA /* MyMindUIExtentions.swift in Sources */,
+				6ABC1E941C396708001F15BF /* User.swift in Sources */,
 				6A9A7E8C1C0C2C2900F584E5 /* ViewController.swift in Sources */,
 				6A9A7E921C0C2C2900F584E5 /* MyMind.xcdatamodeld in Sources */,
 				6ABC1E8E1C39659C001F15BF /* PostInterview+CoreDataProperties.swift in Sources */,
 				6A9A7E8A1C0C2C2900F584E5 /* AppDelegate.swift in Sources */,
+				6ABC1E931C396708001F15BF /* User+CoreDataProperties.swift in Sources */,
 				6A9A7F091C0C613B00F584E5 /* BaseView.swift in Sources */,
 				6ABC1E8D1C39659C001F15BF /* Interview.swift in Sources */,
 			);
@@ -646,6 +655,7 @@
 		6A9A7E901C0C2C2900F584E5 /* MyMind.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6ABC1E901C3966DB001F15BF /* MyMind 1.xcdatamodel */,
 				6A9A7E911C0C2C2900F584E5 /* MyMind.xcdatamodel */,
 			);
 			currentVersion = 6A9A7E911C0C2C2900F584E5 /* MyMind.xcdatamodel */;
