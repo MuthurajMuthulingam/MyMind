@@ -18,3 +18,14 @@ extension UILabel {
     }
     
 }
+
+extension UITextField {
+    func createMyMinduTextField(text:String,textColor:UIColor,textAlignment:NSTextAlignment) -> UILabel{
+        let myTextField:UILabel = UILabel()
+        myTextField.text = text
+        myTextField.textColor = textColor
+        myTextField.textAlignment = textAlignment
+        return myTextField
+    }
+    
+}
