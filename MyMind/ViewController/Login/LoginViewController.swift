@@ -28,7 +28,7 @@ class LoginViewController: BaseViewController {
 
     @IBAction func loginClicked(sender: AnyObject) {
     
-        let dashboardViewController:DashboardViewController = DashboardViewController()
+        let dashboardViewController:MenuViewController = MenuViewController()
         let newNavigationcontrol:UINavigationController = UINavigationController(rootViewController: dashboardViewController)
          (UIApplication.sharedApplication().delegate as! AppDelegate).window?.rootViewController = newNavigationcontrol
         self.navigationController?.pushViewController(dashboardViewController, animated: true)
