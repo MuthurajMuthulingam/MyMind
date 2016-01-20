@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController,MenuViewControllerDelegate {
    
     var menuViewController:MenuViewController!
     var dashboardViewController:DashboardViewController!
@@ -25,6 +25,7 @@ class BaseViewController: UIViewController {
         startXPos = 0
         
         menuViewController = MenuViewController()
+        menuViewController.delegate = self
         menuViewController.view.frame = self.view.frame
         self.view .addSubview(menuViewController.view)
         self.addChildViewController(menuViewController)
@@ -51,6 +52,16 @@ class BaseViewController: UIViewController {
         }
         
         animateMenu()
+    }
+    
+    // Mark: Menu Item Clicked
+    
+    func selectedMenuItem(menuViewController: MenuViewController, selectedMenu: NSString) {
+        let viewController:UIViewController = UIViewController(nibName: nil, bundle: nil)
+        viewController.view.backgroundColor = UIColor.redColor()
+        newNavController.viewControllers = NSArray(object: viewController) as! [UIViewController]
+        tapped()
+        
     }
     
     // Mark: Show/Hide Menu

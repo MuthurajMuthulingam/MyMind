@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol menuViewDelegate
+{
+    func menuClicked(menuView:MenuView,selectedMenu:NSString)
+}
+
 class MenuView: UIView,UITableViewDelegate,UITableViewDataSource {
   
     var tableView:UITableView!
+    var delegate:menuViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -46,5 +52,9 @@ class MenuView: UIView,UITableViewDelegate,UITableViewDataSource {
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         cell.textLabel?.text = "Test"
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.delegate?.menuClicked(self, selectedMenu: "Test")
     }
 }
