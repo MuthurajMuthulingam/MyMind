@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController,MenuViewControllerDelegate {
+class BaseViewController: UIViewController,MenuViewControllerDelegate,MainViewControllerDelegate {
    
     var menuViewController:MenuViewController!
     var dashboardViewController:DashboardViewController!
@@ -32,16 +32,20 @@ class BaseViewController: UIViewController,MenuViewControllerDelegate {
         menuViewController.didMoveToParentViewController(self)
         
         dashboardViewController = DashboardViewController()
+        dashboardViewController.mainDelegate = self
         newNavController = UINavigationController(rootViewController: dashboardViewController)
         let menuBtn:UIBarButtonItem = UIBarButtonItem(title: "Add", style: UIBarButtonItemStyle.Done, target: self, action: "menuClicked")
         newNavController.navigationItem.leftBarButtonItem = menuBtn
         newNavController.view.frame = self.view.frame
-        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "tapped")
-        newNavController.view.addGestureRecognizer(tap)
         self.view.addSubview(newNavController.view)
         self.addChildViewController(newNavController)
         newNavController.didMoveToParentViewController(self)
         
+    }
+    
+    func viewTapped(mainView: MainViewController) {
+        print("View Tapped in Base View Controller")
+        tapped()
     }
     
     func tapped() {

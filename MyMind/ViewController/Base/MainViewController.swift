@@ -1,28 +1,29 @@
 //
-//  DashboardViewController.swift
+//  MainViewController.swift
 //  MyMind
 //
-//  Created by Muthuraj Muthulingam on 1/11/16.
+//  Created by Muthuraj Muthulingam on 1/20/16.
 //  Copyright © 2016 Muthuraj Muthulingam. All rights reserved.
 //
 
 import UIKit
 
-protocol DashboardViewControlerDelegate:MainViewControllerDelegate {
-    
+protocol MainViewControllerDelegate {
+    func viewTapped(mainView:MainViewController)
 }
 
-class DashboardViewController: MainViewController,DashboardViewDelegate {
+class MainViewController: UIViewController,baseViewDelegate {
+    var mainDelegate:MainViewControllerDelegate?
     
-    var dashboardView:DashboardView!
+    override func loadView() {
+    super.loadView()
+        createUserInterface()
+    }
     
-    override func createUserInterface() {
-        //super.createUserInterface()
+    // Mark : Create User Interface
+    
+    func createUserInterface() {
         
-        dashboardView = DashboardView()
-        dashboardView.delegate = self
-        dashboardView.baseDelegate = self
-        self.view.addSubview(dashboardView)
     }
     
     override func viewDidLoad() {
@@ -31,6 +32,7 @@ class DashboardViewController: MainViewController,DashboardViewDelegate {
         // Do any additional setup after loading the view.
         
         self.view.backgroundColor = UIColor.greenColor()
+        self.view.userInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,19 +40,12 @@ class DashboardViewController: MainViewController,DashboardViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillLayoutSubviews() {
-         super.viewWillLayoutSubviews()
-        dashboardView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))
-    }
+    // Mark : base View delegate
     
-// Mark : Dashboard View Delagates
-    
-    func dashboardViewItemClicked(dashboardView: DashboardView?, clickedItem: NSString?) {
-        print("Clicked Item \(clickedItem)")
+    func viewTapped(baseVie: BaseView) {
         self.mainDelegate?.viewTapped(self)
     }
-    
-    
+
     /*
     // MARK: - Navigation
 
