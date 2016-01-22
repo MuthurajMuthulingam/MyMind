@@ -12,40 +12,25 @@ protocol DashboardViewDelegate:baseViewDelegate {
     func dashboardViewItemClicked(dashboardView:DashboardView?,clickedItem:NSString?)
 }
 
-class DashboardView: BaseView ,UITableViewDelegate,UITableViewDataSource{
+class DashboardView: BaseView,MyMindTableViewDelegate{
     
-    var tableView:UITableView!
+    var tableView:MyMindTableView!
     var delegate:DashboardViewDelegate?
     
     override func createViews()  {
         super.createViews()
         
-        tableView = UITableView(frame: CGRectMake(0, 0, 100, 500), style: .Plain)
+        tableView = MyMindTableView(classType: UITableViewCell.classForCoder())
         tableView.delegate = self
-        tableView.dataSource = self
         self.addSubview(tableView)
         
-        tableView .registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        tableView.updateViewWithData(NSArray(array: ["Test","TEst","TEst","TEst","TEst"]))
     }
 
-    // Mark : UITable View Data source and Delegate
+    // Mark: MyMind Table View Delegate
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func  tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = tableView .dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = "Test\(indexPath.row)"
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.delegate?.dashboardViewItemClicked(self, clickedItem: "Test\(indexPath.row)")
+    func myMindTableItemSelected(myMindTableView: MyMindTableView, tableRowClassInsatnce: AnyObject?, selectedItem: NSDictionary?) {
+        print("Cell Clicked")
     }
     
     override func layoutSubviews() {

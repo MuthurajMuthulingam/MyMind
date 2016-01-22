@@ -24,6 +24,7 @@
 		6A9A7F0B1C0C614F00F584E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A7F0A1C0C614F00F584E5 /* BaseViewController.swift */; };
 		6A9A7F0F1C0C61A500F584E5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A7F0E1C0C61A500F584E5 /* LoginView.swift */; };
 		6A9A7F111C0C61D800F584E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A7F101C0C61D800F584E5 /* LoginViewController.swift */; };
+		6AA71FB21C50B7AE003E9592 /* MyMindTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA71FB11C50B7AE003E9592 /* MyMindTableView.swift */; };
 		6ABC1E8C1C39659C001F15BF /* Interview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E881C39659C001F15BF /* Interview+CoreDataProperties.swift */; };
 		6ABC1E8D1C39659C001F15BF /* Interview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E891C39659C001F15BF /* Interview.swift */; };
 		6ABC1E8E1C39659C001F15BF /* PostInterview+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC1E8A1C39659C001F15BF /* PostInterview+CoreDataProperties.swift */; };
@@ -88,6 +89,7 @@
 		6A9A7F0A1C0C614F00F584E5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewController/Base/BaseViewController.swift; sourceTree = "<group>"; };
 		6A9A7F0E1C0C61A500F584E5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Views/Login/LoginView.swift; sourceTree = "<group>"; };
 		6A9A7F101C0C61D800F584E5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewController/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		6AA71FB11C50B7AE003E9592 /* MyMindTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMindTableView.swift; path = Views/Common/MyMindTableView.swift; sourceTree = "<group>"; };
 		6ABC1E881C39659C001F15BF /* Interview+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Interview+CoreDataProperties.swift"; path = "Model/Interview+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6ABC1E891C39659C001F15BF /* Interview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interview.swift; path = Model/Interview.swift; sourceTree = "<group>"; };
 		6ABC1E8A1C39659C001F15BF /* PostInterview+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PostInterview+CoreDataProperties.swift"; path = "Model/PostInterview+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		6A9A7F061C0C611600F584E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6AA71FB01C50B772003E9592 /* Common */,
 				6A855E351C44F3C900335D7F /* Menu */,
 				6A86B61E1C43C822001F4C33 /* Dashboard */,
 				6A9A7F0D1C0C618400F584E5 /* Login */,
@@ -278,6 +281,14 @@
 				6A9A7F0E1C0C61A500F584E5 /* LoginView.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		6AA71FB01C50B772003E9592 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6AA71FB11C50B7AE003E9592 /* MyMindTableView.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		6AD9FF331C1567100004E9AA /* UI Catagories */ = {
@@ -429,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9A7F111C0C61D800F584E5 /* LoginViewController.swift in Sources */,
+				6AA71FB21C50B7AE003E9592 /* MyMindTableView.swift in Sources */,
 				6ABC1E8F1C39659C001F15BF /* PostInterview.swift in Sources */,
 				6A86B6211C43C872001F4C33 /* DashboardView.swift in Sources */,
 				6A9A7F0F1C0C61A500F584E5 /* LoginView.swift in Sources */,
