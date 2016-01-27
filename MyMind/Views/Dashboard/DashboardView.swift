@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DashboardViewDelegate:baseViewDelegate {
-    func dashboardViewItemClicked(dashboardView:DashboardView?,clickedItem:NSString?)
+    func dashboardViewItemClicked(dashboardView:DashboardView?,clickedItem:NSDictionary?)
 }
 
 class DashboardView: BaseView,MyMindTableViewDelegate{
@@ -30,7 +30,7 @@ class DashboardView: BaseView,MyMindTableViewDelegate{
     // Mark: MyMind Table View Delegate
     
     func myMindTableItemSelected(myMindTableView: MyMindTableView, tableRowClassInsatnce: AnyObject?, selectedItem: NSDictionary?) {
-        print("Cell Clicked")
+        self.delegate?.dashboardViewItemClicked(self, clickedItem: selectedItem)
     }
     
     override func layoutSubviews() {

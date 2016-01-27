@@ -66,12 +66,11 @@ class MyMindTableView: UIView,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = "cell \(indexPath.row)"
+        cell.textLabel?.text = "cell \(tableData[indexPath.row])"
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("Row Selected")
         let cell:AnyObject = tableView.cellForRowAtIndexPath(indexPath)!
         self.delegate?.myMindTableItemSelected(self, tableRowClassInsatnce: cell, selectedItem: tableData[indexPath.row] as? NSDictionary)
     }

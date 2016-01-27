@@ -45,11 +45,9 @@ class DashboardViewController: MainViewController,DashboardViewDelegate {
     
 // Mark : Dashboard View Delagates
     
-    func dashboardViewItemClicked(dashboardView: DashboardView?, clickedItem: NSString?) {
-        print("Clicked Item \(clickedItem)")
+    func dashboardViewItemClicked(dashboardView: DashboardView?, clickedItem: NSDictionary?) {
         self.mainDelegate?.viewTapped(self)
     }
-    
     
     /*
     // MARK: - Navigation
